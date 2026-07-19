@@ -12,9 +12,8 @@ A deep learning model trained on **40,000+ images** that classifies clothing ima
 
 ## 📸 Output
 
-<!-- To upload screenshots: go to your GitHub repo → open any Issue → drag and drop your screenshot into the comment box → copy the generated image URL → paste it in place of the demo/ paths below -->
 
-| Input Image | Predicted Class | Confidence |
+
 |---|---|---|
 <img width="1649" height="775" alt="image" src="https://github.com/user-attachments/assets/5853bcdd-5369-42d5-bac8-40d85be2fb46" />
 
