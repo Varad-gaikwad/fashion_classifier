@@ -1,7 +1,7 @@
 
 #  Fashion Classifier
 
-A deep learning model trained on **40,000+ images** that classifies clothing images into 10 categories using a multi-layer neural network built with TensorFlow/Keras — with a live interactive web app powered by Streamlit.
+A deep learning model trained on **18,000 images** that classifies clothing images into 10 categories using a multi-layer neural network built with TensorFlow/Keras — with a live interactive web app powered by Streamlit.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow&logoColor=white)
@@ -20,6 +20,7 @@ A deep learning model trained on **40,000+ images** that classifies clothing ima
 
 ---
 
+
 ## 🎯 What It Does
 
 Upload any clothing image and the model predicts which of the 10 categories it belongs to — along with a confidence score.
@@ -32,6 +33,11 @@ Upload any clothing image and the model predicts which of the 10 categories it b
 | 👗 Dress | 🧥 Pullover | 👡 Sandal |
 | 👔 Shirt | 👟 Sneaker | 👕 T-shirt |
 | 👖 Trouser | | |
+
+---
+## 🚀 Getting Started
+
+###
 
 ---
 
@@ -81,11 +87,6 @@ fashion-classifier/
 
 ---
 
-## 🚀 Getting Started
-
-###
----
-
 ## 🗂️ Dataset Format
 
 The dataset should be organised as follows (one folder per class):
@@ -108,6 +109,18 @@ dataset/
 ```
 
 Images should be **grayscale**, **28×28 pixels**. The model uses `tf.keras.utils.image_dataset_from_directory` to load them automatically from this folder structure.
+
+---
+## 📦 Dataset Source
+
+The training and test images are sourced from the **Fashion MNIST** dataset, originally created by Zalando Research.
+
+- 📎 Original dataset: https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small/data
+- 🖼️ 18,000 grayscale images (15,000train + 3,000 test)
+- 📐 Each image: 28×28 pixels, single channel (grayscale)
+- 🏷️ 10 classes: T-shirt, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle Boot
+
+The dataset was reorganised into a folder structure compatible with `tf.keras.utils.image_dataset_from_directory`, with one subfolder per class under `dataset/train/` and `dataset/test/`.
 
 ---
 
